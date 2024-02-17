@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags para configuração da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Título da página -->
+    <title>Calculadora - Análise de NOTAS</title>
+</head>
+
+<body>
+
+    <!-- Botão para ativar o modo escuro -->
+
+    <div id="modoEscuroBtn" class="modoEscuroBtn" onclick="alternarModoEscuro()">
+        <img id="moonIcon" class="moon" src="https://img.icons8.com/sf-regular-filled/48/moon-symbol.png" alt="" />
+    </div>
+
+    <!-- Container principal da página -->
+    <div class="container">
+
+        <!-- Cabeçalho da página -->
+        <header>
+            <!-- Título principal da calculadora -->
+            <h1>Calculadora <br> <span class="title-1">Análise de NOTAS</span> - CO</h1>
+        </header>
+
+        <!-- Seção do menu contendo botões e inputs -->
+        <section class="menu">
+
+            <!-- Bloco para calcular a Base IVA -->
+            <div>
+                <!-- Botão para acionar o cálculo -->
+                <button class="btns" onclick="calcularIVA()">Calcular Base IVA</button>
+                <!-- Rótulo do input -->
+                <label for="total-inputIva"></label>
+                <!-- Input para inserção do valor do imposto IVA -->
+                <input type="text" placeholder="Digite imposto IVA" id="total-inputIva">
+                <span id="resultadoBsIva"></span>
+            </div>
+
+            <!-- Bloco para calcular a Base Não Gravável -->
+            <div id="input-container">
+                <!-- Botão para acionar o cálculo -->
+                <button class="btns" onclick="calcularBaseNaoGravavel()">Calcular Base Não Gravável</button>
+                <!-- Rótulo e input para o total da fatura -->
+                <label for="total-input"></label>
+                <input type="text" id="total-input" placeholder="Total da Fatura:">
+                <!-- Rótulo e input para o valor bruto -->
+                <label for="bruto-input"></label>
+                <input type="text" id="bruto-input" placeholder="importe bruto">
+                <span id="resultadoNGrav"></span>
+            </div>
+
+            <!-- Bloco para calcular a Base Impo-Consumo -->
+            <div id="input-container-impo">
+                <!-- Botão para acionar o cálculo -->
+                <button class="btns" onclick="calcularImpoConsumo()">Calcular Impo-Consumo</button>
+                <!-- Rótulo e input para o valor Impo -->
+                <label for="valorImpo"></label>
+                <input type="text" id="valorImpo" placeholder="Valor Impo:">
+                <!-- Span para exibir o resultado -->
+                <span id="resultadoImpo"></span>
+            </div>
+
+            <!-- Bloco para calcular a Base AIU -->
+            <div>
+                <!-- Botão para acionar o cálculo -->
+                <button class="btns" onclick="calcularAiu()">Calcular Base AIU</button>
+                <!-- Rótulo e input para o valor AIU -->
+                <label for="valorAiu"> </label>
+                <input type="text" id="valorAiu" placeholder="Digite o valor AIU/IVA">
+                <!-- Rótulo e input para o subtotal -->
+                <label for="subAiu"></label>
+                <input type="text" id="subAiu" placeholder="Digite o valor Subtotal">
+                <span id="resultadoAiu"></span>
+            </div>
+        </section>
+
+        <!-- Div para exibir resultados na página -->
+        <div id="output"></div>
+    </div>
+
+
+    <footer>
+        <h5>Victor Ferreira </h5>
+        <h6>v.a.ferreira@accentura.com</h6>
+    </footer>
+
+    <!-- Inclusão do script JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>

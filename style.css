@@ -1,0 +1,247 @@
+/* Reset de Estilos para Garantir uma Base Consistente */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Estilos Gerais para o Corpo da Página */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: linear-gradient(to right, #f8f8f8, #e0e0e0);
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Estilos para o Container Principal */
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilos para o Cabeçalho */
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Estilos para a Seção do Menu */
+
+.menu {
+    display: grid;
+    gap: 20px;
+}
+
+.title-1 {
+    color: #45a049;
+}
+
+
+/* Estilos para os Botões e Inputs */
+
+.btns {
+    padding: 12px;
+    font-weight: bold;
+    background-color: #4caf50;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.btns:hover {
+    background-color: #45a049;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    color: #eee;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+input:hover,
+input:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+
+/* Estilos para as Mensagens de Saída */
+
+.output {
+    display: flex;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    animation: fadeInOut 2s infinite;
+    margin-top: 20px;
+    padding: 14px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Estilo para mensagem de sucesso */
+
+.output.success {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+
+/* Estilo para mensagem de erro */
+
+.output.error {
+    background-color: #f44336;
+    color: #f44336;
+}
+
+#resultadoBsIva,
+#resultadoNGrav,
+#resultadoImpo,
+#resultadoAiu {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+}
+
+
+/* Estilos Responsivos */
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .menu {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Adaptação para Dispositivos Pequenos */
+
+@media screen and (max-width: 400px) {
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    button {
+        margin-bottom: 8px;
+    }
+}
+
+
+/* Animação para Mensagens de Saída */
+
+@keyframes fadeInOut {
+    0%,
+    100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+/* Modo dark */
+
+.moon {
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 0px;
+    transition: color 0.3s ease;
+    /* Adicionando transição suave de cor */
+}
+
+
+/* Estilo para o botão Modo Escuro */
+
+.modoEscuroBtn {
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 20px;
+    height: 20px;
+    /* Centralizando o ícone dentro do botão */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modoEscuroBtn:hover {
+    background-color: #555;
+}
+
+.modoEscuroBtn:hover .moon {
+    color: #fff;
+    /* Altera a cor do ícone ao passar o mouse */
+}
+
+
+/* Adaptação de estilos para o Modo Escuro */
+
+body.modo-escuro {
+    background: #333;
+    color: #fff;
+}
+
+
+/* Exemplo de estilo para texto em modo escuro */
+
+body.modo-escuro p {
+    color: #fff;
+}
+
+
+/* Exemplo de estilo para seção em modo escuro */
+
+body.modo-escuro section {
+    background-color: #444;
+    color: #fff;
+}
+
+body.modo-escuro .container {
+    background-color: #444;
+    color: #fff;
+}
+
+body.modo-escuro button {
+    background-color: #808080;
+    color: #fff;
+    font-weight: bold;
+}

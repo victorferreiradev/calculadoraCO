@@ -41,7 +41,7 @@
             }
 
             const resultado = total - bruto;
-            resultadoSpan.innerText = `Base no gravable: ${resultado.toFixed(2)}`;
+            resultadoSpan.innerText = `Base no gravable:  ${resultado.toFixed(2)}`;
 
             setTimeout(() => {
                 resultadoSpan.innerText = '';
@@ -61,7 +61,7 @@
             }
 
             const resultado = valorImpo / 8;
-            resultadoSpan.innerText = `Base Impo-Consumo: ${resultado.toFixed(2)}`;
+            resultadoSpan.innerText = `Base Impo-Consumo:  ${resultado.toFixed(2)}`;
 
             setTimeout(() => {
                 resultadoSpan.innerText = '';
@@ -85,7 +85,7 @@
             const resultadoAiu = aiu / 19;
             const resultadoSub = resultadoAiu - subTotal;
 
-            resultadoSpan.innerText = `Base AIU: ${resultadoAiu.toFixed(2)} |Base no gravable: ${resultadoSub.toFixed(2)}`;
+            resultadoSpan.innerText = `Base AIU:  ${resultadoAiu.toFixed(2)} | Base no gravable:  ${resultadoSub.toFixed(2)}`;
 
             setTimeout(() => {
                 resultadoSpan.innerText = '';

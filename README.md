@@ -2,7 +2,7 @@
 
 Uma calculadora simples para realizar análises financeiras relacionadas a impostos e faturas.
 
-## Funcionalidades
+## 📝 Funcionalidades
 
 - Cálculo da Base IVA
 - Cálculo da Base Não Gravável
@@ -10,7 +10,7 @@ Uma calculadora simples para realizar análises financeiras relacionadas a impos
 - Cálculo da Base AIU
 - Modo escuro para uma experiência visual diferenciada
 
-## Como Usar
+## 💡 Como Usar
 
 1. Baixe os arquivos HTML, CSS e JavaScript.
 2. Abra o arquivo HTML em um navegador da web.

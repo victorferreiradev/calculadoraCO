@@ -245,3 +245,15 @@ body.modo-escuro button {
     color: #fff;
     font-weight: bold;
 }
+
+body.modo-escuro input {
+    background-color: #808080;
+    font-weight: bold;
+    color: #fff;
+}
+
+body.modo-escuro input::placeholder {
+    background-color: #808080;
+    font-weight: bold;
+    color: #bebebe;
+}
